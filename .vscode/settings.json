@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "vscode.html-language-features",
+  "accessibility.voice.speechLanguage": "pl-PL",
+  "dictation.enabled": true,
+  "dictation.showButton": true,
+  "dictation.showTranscript": true,
+  "agents.voice.enabled": true,
+  "agents.voice.showButton": true
+}
