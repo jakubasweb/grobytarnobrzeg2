@@ -1,466 +1,537 @@
 <!DOCTYPE html>
-<html lang="pl" class="scroll-smooth">
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Profesjonalne Sprzątanie Grobów Tarnobrzeg | Opieka nad grobami</title>
-    <meta name="description" content="Zadbamy o groby Twoich bliskich w Tarnobrzegu i okolicach. Oferujemy jednorazowe i całoroczne sprzątanie grobów. Otrzymasz zdjęcia po każdej usłudze.">
-    <meta name="keywords" content="sprzątanie grobów, opieka nad grobami, mycie pomników, Tarnobrzeg, usługi cmentarne">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sprzątanie i opieka nad grobami Tarnobrzeg | Pamięć i Porządek</title>
+  <meta name="description" content="Sprzątanie, mycie nagrobków, znicze i kwiaty na cmentarzach w Tarnobrzegu i okolicach. Bezpłatna wycena, zdjęcia przed i po każdej wizycie. Zadzwoń lub napisz.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#2f4a42">
+  <link rel="canonical" href="https://www.example.pl/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-    <meta property="og:type" content="website">
-    
-    <!-- Preconnect dla fontów dla lepszej wydajności -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#fcf9f2',
-                            100: '#f6efe0',
-                            200: '#ebd4a3',
-                            300: '#dfb460',
-                            400: '#d1972b',
-                            500: '#B8860B', // Wskazane patynowe złoto (Dark Goldenrod)
-                            600: '#996805',
-                            700: '#7a4d06',
-                            800: '#633e0a',
-                            900: '#52330e',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <style>
-        /* Dodatkowe style dla płynnych przejść i użyteczności */
-        body {
-            -webkit-tap-highlight-color: transparent;
-        }
-        .transition-theme {
-            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-        }
-    </style>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="Pamięć i Porządek">
+  <meta property="og:title" content="Sprzątanie i opieka nad grobami – Tarnobrzeg i okolice">
+  <meta property="og:description" content="Zadbany grób to wyraz pamięci. Sprzątanie, mycie nagrobków, znicze i kwiaty. Zdjęcia po każdej wizycie.">
+  <meta property="og:url" content="https://www.example.pl/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1567878151693-c0493e064199?auto=format&amp;fit=crop&amp;q=70&amp;w=1200&amp;h=630">
+  <meta property="og:image:alt" content="Nagrobki otoczone kwiatami w świetle zachodzącego słońca">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1567878151693-c0493e064199?auto=format&amp;fit=crop&amp;q=70&amp;w=800&amp;h=1000"
+        imagesrcset="https://images.unsplash.com/photo-1567878151693-c0493e064199?auto=format&amp;fit=crop&amp;q=70&amp;w=480&amp;h=600 480w, https://images.unsplash.com/photo-1567878151693-c0493e064199?auto=format&amp;fit=crop&amp;q=70&amp;w=800&amp;h=1000 800w, https://images.unsplash.com/photo-1567878151693-c0493e064199?auto=format&amp;fit=crop&amp;q=70&amp;w=1100&amp;h=1375 1100w"
+        imagesizes="(min-width: 56rem) 40vw, 92vw" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css?v=1">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.example.pl/#firma",
+        "name": "Pamięć i Porządek",
+        "description": "Sprzątanie, mycie i opieka nad grobami w Tarnobrzegu i okolicach.",
+        "url": "https://www.example.pl/",
+        "telephone": "+48600000000",
+        "email": "kontakt@example.pl",
+        "image": "https://images.unsplash.com/photo-1567878151693-c0493e064199?auto=format&fit=crop&q=70&w=1200&h=630",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ul. Przykładowa 1",
+          "postalCode": "39-400",
+          "addressLocality": "Tarnobrzeg",
+          "addressCountry": "PL"
+        },
+        "areaServed": [
+          {"@type": "City", "name": "Tarnobrzeg"},
+          {"@type": "City", "name": "Sandomierz"},
+          {"@type": "City", "name": "Stalowa Wola"},
+          {"@type": "City", "name": "Nowa Dęba"}
+        ],
+        "openingHoursSpecification": [
+          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "18:00"}
+        ],
+        "makesOffer": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sprzątanie grobów"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mycie i czyszczenie nagrobków"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Opieka cykliczna nad grobami"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Znicze, kwiaty i stroiki na grób"}}
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.example.pl/#strona",
+        "url": "https://www.example.pl/",
+        "name": "Pamięć i Porządek",
+        "inLanguage": "pl-PL"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Skąd będę wiedzieć, że usługa została wykonana?", "acceptedAnswer": {"@type": "Answer", "text": "Po każdej wizycie wysyłam zdjęcia grobu przed i po pracach – SMS-em, e-mailem lub przez komunikator."}},
+          {"@type": "Question", "name": "Czy muszę być obecny na cmentarzu?", "acceptedAnswer": {"@type": "Answer", "text": "Nie. Wystarczy, że podasz lokalizację grobu. Usługę mogę wykonać także dla osób mieszkających daleko lub za granicą."}},
+          {"@type": "Question", "name": "Jak opisać, gdzie znajduje się grób?", "acceptedAnswer": {"@type": "Answer", "text": "Podaj nazwę cmentarza oraz kwaterę, rząd i numer grobu. Pomocne jest też zdjęcie nagrobka lub imię i nazwisko osoby pochowanej."}},
+          {"@type": "Question", "name": "Czy potrzebna jest zgoda zarządcy cmentarza?", "acceptedAnswer": {"@type": "Answer", "text": "Zwykłe sprzątanie i mycie zazwyczaj jej nie wymaga. Większe prace przy nagrobku mogą wymagać zgody zarządcy – zawsze stosuję się do regulaminu danego cmentarza."}},
+          {"@type": "Question", "name": "Czy wykonujesz usługi przed Wszystkimi Świętymi?", "acceptedAnswer": {"@type": "Answer", "text": "Tak, ale terminy w październiku szybko się zapełniają, dlatego warto zgłosić się z wyprzedzeniem."}},
+          {"@type": "Question", "name": "Jak mogę zapłacić?", "acceptedAnswer": {"@type": "Answer", "text": "Przelewem, BLIK-iem lub gotówką. Cenę podaję przed rozpoczęciem prac."}},
+          {"@type": "Question", "name": "Jakich środków używasz do mycia nagrobków?", "acceptedAnswer": {"@type": "Answer", "text": "Delikatnych preparatów dobranych do rodzaju kamienia, bez agresywnych substancji, które mogłyby go uszkodzić."}},
+          {"@type": "Question", "name": "Co jeśli nie będę zadowolony z efektu?", "acceptedAnswer": {"@type": "Answer", "text": "Napisz lub zadzwoń – poprawię to, co wymaga poprawy, lub rozpatrzę reklamację zgodnie z regulaminem."}}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
-<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-theme font-sans antialiased flex flex-col min-h-screen">
+<body class="has-callbar">
+  <a class="skip" href="#main">Przejdź do treści</a>
 
-    <!-- Header / Nawigacja -->
-    <header class="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-theme">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo Groby Tarnobrzeg -->
-                <a href="#" class="flex items-center gap-3 group focus:outline-none">
-                    <div class="w-10 h-10 flex items-center justify-center shrink-0">
-                        <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M28 86V34C28 20 38 12 51 12C64 12 74 20 74 34V86" fill="#e2e8f0" stroke="#64748b"
-                                stroke-width="4.5" stroke-linejoin="round" />
-                            <path d="M14 86V48C14 34 24 26 39 26C54 26 64 34 64 48V86" fill="#ffffff" stroke="#B8860B"
-                                stroke-width="6.5" stroke-linejoin="round" />
-                            <rect x="6" y="85" width="88" height="6" rx="3" fill="#B8860B" />
-                            <path d="M80 16Q80 27 91 27Q80 27 80 38Q80 27 69 27Q80 27 80 16Z" fill="#D99B16" />
-                        </svg>
-                    </div>
-                    <div>
-                        <span class="text-xl font-bold tracking-tight text-gray-900 dark:text-white group-hover:text-[#B8860B] transition-colors">Groby Tarnobrzeg</span>
-                        <span class="block text-[14px] text-[#B8860B] font-medium tracking-wider normal-case">Sprzątanie grobów</span>
-                    </div>
-                </a>
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8 items-center" aria-label="Nawigacja główna">
-                    <a href="#oferta" class="text-gray-600 hover:text-brand-600 dark:text-gray-300 dark:hover:text-brand-400 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500 rounded px-2 py-1">Oferta</a>
-                    <a href="#jak-to-dziala" class="text-gray-600 hover:text-brand-600 dark:text-gray-300 dark:hover:text-brand-400 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500 rounded px-2 py-1">Jak to działa</a>
-                    <a href="#kontakt" class="text-gray-600 hover:text-brand-600 dark:text-gray-300 dark:hover:text-brand-400 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500 rounded px-2 py-1">Kontakt</a>
-                </nav>
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-logo" viewBox="0 0 24 24"><path d="M12 21V11M12 11C12 7 9 4.5 5 4.5c0 4 2.5 6.5 7 6.5zM12 14.5c0-3 2.2-5 6-5 0 3-2 5-6 5zM8 21h8"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zM3.5 7.5l8.5 6 8.5-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.7-6.5-11a6.5 6.5 0 0 1 13 0c0 5.3-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-9 5-14 15-14 0 10-5 15-14 15M5 19l8-8"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.2 6 10.5a6 6 0 0 1-12 0C6 9.2 12 3 12 3z"/><path d="M9.5 14.5a2.7 2.7 0 0 0 2 2"/></symbol>
+    <symbol id="i-candle" viewBox="0 0 24 24"><path d="M8 11h8v9a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zM7 11h10"/><path d="M12 3c1.6 1.8 2.4 3 2.4 4.2a2.4 2.4 0 0 1-4.8 0C9.6 6 10.4 4.8 12 3z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 10h16M8 3v4M16 3v4M9.5 15l2 2 3.5-3.5"/></symbol>
+    <symbol id="i-wreath" viewBox="0 0 24 24"><circle cx="12" cy="11" r="7"/><circle cx="12" cy="11" r="3.5"/><path d="M12 18l-2.5 3.5M12 18l2.5 3.5"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M10 3l1.8 5.2L17 10l-5.2 1.8L10 17l-1.8-5.2L3 10l5.2-1.8zM18 14.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v5.5c0 4.5-3.3 8.3-8 9.5-4.7-1.2-8-5-8-9.5V6zM8.8 12l2.2 2.2 4.2-4.4"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+  </svg>
 
-                <div class="flex items-center space-x-4">
-                    <!-- Telefon dla szybkich akcji (ważne dla grupy 40+) -->
-                    <a href="tel:+48607455340" class="hidden sm:flex items-center gap-2 font-semibold text-brand-700 dark:text-brand-400 hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-brand-500 rounded px-2 py-1" aria-label="Zadzwoń do nas">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                        </svg>
-                        607 455 340
-                    </a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Pamięć i Porządek – strona główna">
+        <svg class="icon" aria-hidden="true"><use href="#i-logo"/></svg>
+        <span>Pamięć i Porządek</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+        <svg class="icon i-open" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon i-close" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+      <nav id="menu" class="nav" aria-label="Menu główne">
+        <a href="#uslugi">Usługi</a>
+        <a href="#jak-to-dziala">Jak to działa</a>
+        <a href="#cennik">Cennik</a>
+        <a href="#o-mnie">O mnie</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="btn btn-primary" href="#kontakt">Bezpłatna wycena</a>
+      </nav>
+    </div>
+  </header>
 
-                    <!-- Dark Mode Toggle -->
-                    <button id="theme-toggle" class="p-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Przełącz motyw jasny/ciemny">
-                        <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                        <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>
-                    </button>
-                </div>
-            </div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Tarnobrzeg i okolice</p>
+          <h1 id="hero-title">Zadbany grób to wyraz pamięci. Zajmę się nim za Ciebie.</h1>
+          <p class="lead">Sprzątanie, mycie nagrobków, kwiaty i znicze. Pracuję z szacunkiem i dyskrecją, a po każdej wizycie wysyłam zdjęcia.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#kontakt">Poproś o bezpłatną wycenę <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn" href="tel:+48600000000"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> +48 600 000 000</a>
+          </div>
+          <ul class="checks">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Zdjęcia przed i po każdej wizycie</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Cena ustalona z góry, bez niespodzianek</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Także dla osób mieszkających daleko</li>
+          </ul>
         </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="flex-grow pt-20">
-        
-        <!-- Hero Section -->
-        <section class="relative overflow-hidden py-16 sm:py-24 lg:py-32">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
-                    
-                    <!-- Text Content -->
-                    <div class="lg:col-span-6 text-center lg:text-left mb-12 lg:mb-0">
-                        <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-800 dark:bg-brand-900/30 dark:text-brand-300 text-sm font-semibold tracking-wider mb-4 uppercase">
-                            Tarnobrzeg i okolice
-                        </span>
-                        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-6">
-                            Zadbamy o miejsce spoczynku Twoich bliskich.
-                        </h1>
-                        <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
-                            Brak czasu to nie powód do wyrzutów sumienia. Zleć nam profesjonalne sprzątanie i opiekę nad grobami. Po każdej wizycie otrzymasz szczegółową dokumentację zdjęciową, zyskując spokój ducha.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <a href="#kontakt" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-white bg-brand-600 hover:bg-brand-700 shadow-lg hover:shadow-xl transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 dark:focus:ring-offset-gray-900 w-full sm:w-auto">
-                                Zamów darmową wycenę
-                            </a>
-                            <a href="#oferta" class="inline-flex justify-center items-center px-8 py-4 border border-gray-300 dark:border-gray-700 text-base font-medium rounded-lg text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 w-full sm:w-auto">
-                                Zobacz pakiety
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Image (Provided Asset) -->
-                    <div class="lg:col-span-6 relative">
-                        <!-- Dekoracyjny kształt w tle -->
-                        <div class="absolute inset-0 bg-gradient-to-tr from-brand-100 to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-3xl transform rotate-3 scale-105 -z-10"></div>
-                        <img src="141126hero-image.avif" alt="Zadbany nagrobek z białymi kwiatami i zapalonym zniczem o zachodzie słońca" class="rounded-3xl shadow-2xl object-cover w-full h-[400px] sm:h-[500px] lg:h-[600px] relative z-10 border-4 border-white dark:border-gray-800">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Dlaczego my? (Zaufanie) -->
-        <section class="bg-white dark:bg-gray-800 py-16 transition-theme">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div class="p-6">
-                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-100 dark:bg-brand-900/40 text-brand-600 dark:text-brand-400 mb-4">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Zdjęcie po usłudze</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Zawsze przesyłamy wyraźne zdjęcia przed i po wykonaniu zlecenia (SMS lub Email), abyś miał pewność rzetelnie wykonanej pracy.</p>
-                    </div>
-                    <div class="p-6">
-                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-100 dark:bg-brand-900/40 text-brand-600 dark:text-brand-400 mb-4">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Terminowość</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Szanujemy Twój czas i ważne daty (rocznice, Święto Zmarłych). Gwarantujemy realizację usługi w wyznaczonym terminie.</p>
-                    </div>
-                    <div class="p-6">
-                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-100 dark:bg-brand-900/40 text-brand-600 dark:text-brand-400 mb-4">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Pełen Szacunek</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Pracujemy z godnością i dbałością o każdy detal. Używamy sprawdzonych środków czystości bezpiecznych dla kamienia.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Usługi (Oferta) -->
-        <section id="oferta" class="py-16 sm:py-24 bg-gray-50 dark:bg-gray-900 transition-theme scroll-mt-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl mb-4">Nasza Oferta</h2>
-                    <p class="text-lg text-gray-600 dark:text-gray-300">Wybierz pakiet dopasowany do Twoich potrzeb. Oferujemy zarówno pomoc doraźną, jak i pakiety długoterminowe.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Pakiet 1 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 overflow-hidden flex flex-col">
-                        <div class="p-8 flex-grow">
-                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Mycie Jednorazowe</h3>
-                            <p class="text-gray-500 dark:text-gray-400 mb-6 min-h-[3rem]">Idealne przed rocznicą lub ważnym świętem.</p>
-                            <div class="text-3xl font-extrabold text-brand-600 dark:text-brand-400 mb-6">od 90 zł<span class="text-lg font-medium text-gray-500 dark:text-gray-400"> /grób</span></div>
-                            <ul class="space-y-4 mb-8">
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-brand-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span class="ml-3 text-gray-600 dark:text-gray-300">Usunięcie starych zniczy i kwiatów</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-brand-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span class="ml-3 text-gray-600 dark:text-gray-300">Umycie nagrobka wodą ze środkiem myjącym</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-brand-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span class="ml-3 text-gray-600 dark:text-gray-300">Uprzątnięcie terenu bezpośrednio wokół grobu</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-brand-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span class="ml-3 text-gray-600 dark:text-gray-300">Zapalenie 2 zniczy (w cenie)</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="p-4 bg-gray-50 dark:bg-gray-800/50 border-t border-gray-100 dark:border-gray-700">
-                            <a href="#kontakt" class="block w-full text-center py-3 px-4 border border-brand-600 text-brand-600 dark:text-brand-400 dark:border-brand-400 hover:bg-brand-50 dark:hover:bg-gray-700 font-semibold rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500">Wybieram</a>
-                        </div>
-                    </div>
-
-                    <!-- Pakiet 2 (Wyróżniony) -->
-                    <div class="bg-brand-600 dark:bg-brand-700 rounded-2xl shadow-xl transform md:-translate-y-4 transition-all border-none overflow-hidden flex flex-col relative">
-                        <div class="absolute top-0 right-0 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wide">
-                            Najpopularniejszy
-                        </div>
-                        <div class="p-8 flex-grow text-white">
-                            <h3 class="text-2xl font-bold mb-2">Opieka Półroczna</h3>
-                            <p class="text-brand-100 mb-6 min-h-[3rem]">Sześć wizyt w roku. Ty wybierasz terminy.</p>
-                            <div class="text-3xl font-extrabold mb-6">od 450 zł<span class="text-lg font-medium text-brand-200"> /pakiet</span></div>
-                            <ul class="space-y-4 mb-8">
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-brand-200 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span class="ml-3">Wszystko to, co w pakiecie jednorazowym</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-brand-200 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span class="ml-3">6 wizyt rozłożonych w roku (np. Święta, Rocznice)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-brand-200 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span class="ml-3">Pielenie chwastów wokół grobu</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-brand-200 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span class="ml-3">Priorytetowe terminy przed 1 Listopada</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="p-4 bg-brand-700 dark:bg-brand-800">
-                            <a href="#kontakt" class="block w-full text-center py-3 px-4 bg-white text-brand-700 hover:bg-gray-100 font-semibold rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-700">Wybieram</a>
-                        </div>
-                    </div>
-
-                    <!-- Pakiet 3 -->
-                    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 overflow-hidden flex flex-col">
-                        <div class="p-8 flex-grow">
-                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Opieka Całoroczna</h3>
-                            <p class="text-gray-500 dark:text-gray-400 mb-6 min-h-[3rem]">Pełen spokój. Odwiedzamy grób co miesiąc.</p>
-                            <div class="text-3xl font-extrabold text-brand-600 dark:text-brand-400 mb-6">od 850 zł<span class="text-lg font-medium text-gray-500 dark:text-gray-400"> /rok</span></div>
-                            <ul class="space-y-4 mb-8">
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-brand-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span class="ml-3 text-gray-600 dark:text-gray-300">12 wizyt (raz w miesiącu)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-brand-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span class="ml-3 text-gray-600 dark:text-gray-300">Kompleksowe mycie, sprzątanie i pastowanie (zależnie od kamienia)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-brand-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span class="ml-3 text-gray-600 dark:text-gray-300">Darmowe znicze i podstawowe kompozycje kwiatowe w cenie</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="p-4 bg-gray-50 dark:bg-gray-800/50 border-t border-gray-100 dark:border-gray-700">
-                            <a href="#kontakt" class="block w-full text-center py-3 px-4 border border-brand-600 text-brand-600 dark:text-brand-400 dark:border-brand-400 hover:bg-brand-50 dark:hover:bg-gray-700 font-semibold rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500">Wybieram</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-8">
-                    * Ceny mają charakter orientacyjny. Ostateczna wycena zależy od wielkości grobu i jego lokalizacji na terenie Tarnobrzega i okolic (do 20km).
-                </p>
-            </div>
-        </section>
-
-        <!-- Jak to działa -->
-        <section id="jak-to-dziala" class="py-16 sm:py-24 bg-white dark:bg-gray-800 transition-theme scroll-mt-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl mb-4">Proces realizacji usługi</h2>
-                    <p class="text-lg text-gray-600 dark:text-gray-300">To bardzo proste. Ty zlecasz, my zajmujemy się resztą.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 relative">
-                    <!-- Linia łącząca na desktopie -->
-                    <div class="hidden md:block absolute top-12 left-1/6 right-1/6 h-0.5 bg-gray-200 dark:bg-gray-700 z-0"></div>
-
-                    <!-- Krok 1 -->
-                    <div class="relative z-10 flex flex-col items-center text-center">
-                        <div class="w-24 h-24 rounded-full bg-brand-50 dark:bg-gray-700 border-4 border-white dark:border-gray-800 shadow-md flex items-center justify-center mb-6">
-                            <span class="text-2xl font-bold text-brand-600 dark:text-brand-400">1</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Kontakt i wycena</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Dzwonisz lub piszesz do nas podając lokalizację grobu. Bezpłatnie wyceniamy usługę i ustalamy termin.</p>
-                    </div>
-
-                    <!-- Krok 2 -->
-                    <div class="relative z-10 flex flex-col items-center text-center">
-                        <div class="w-24 h-24 rounded-full bg-brand-50 dark:bg-gray-700 border-4 border-white dark:border-gray-800 shadow-md flex items-center justify-center mb-6">
-                            <span class="text-2xl font-bold text-brand-600 dark:text-brand-400">2</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Realizacja</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Odwiedzam miejsce spoczynku, sprzątam, myję pomnik i zapalam znicze zgodnie z wybranym pakietem.</p>
-                    </div>
-
-                    <!-- Krok 3 -->
-                    <div class="relative z-10 flex flex-col items-center text-center">
-                        <div class="w-24 h-24 rounded-full bg-brand-50 dark:bg-gray-700 border-4 border-white dark:border-gray-800 shadow-md flex items-center justify-center mb-6">
-                            <span class="text-2xl font-bold text-brand-600 dark:text-brand-400">3</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Raport zdjęciowy</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Od razu po zakończeniu pracy wysyłamy Ci MMS lub Email ze zdjęciami, jako dowód rzetelnego wykonania.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Kontakt -->
-        <section id="kontakt" class="py-16 sm:py-24 bg-gray-50 dark:bg-gray-900 transition-theme scroll-mt-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl overflow-hidden">
-                    <div class="grid grid-cols-1 lg:grid-cols-2">
-                        
-                        <!-- Info kontaktowe -->
-                        <div class="bg-brand-700 p-10 lg:p-16 text-white flex flex-col justify-between">
-                            <div>
-                                <h2 class="text-3xl font-extrabold mb-6">Skontaktuj się z nami</h2>
-                                <p class="text-brand-100 text-lg mb-8">Zarezerwuj termin sprzątania lub zadaj nam pytanie. Odpowiadamy najszybciej jak to możliwe.</p>
-                                
-                                <div class="space-y-6">
-                                    <div class="flex items-center">
-                                        <svg class="w-6 h-6 text-brand-300 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                                        <span class="text-xl font-medium">+48 607 455 340</span>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <svg class="w-6 h-6 text-brand-300 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                                        <span class="text-lg">kontakt@grobytarnobrzeg.pl</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <svg class="w-6 h-6 text-brand-300 mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                        <div>
-                                            <span class="text-lg block">Obszar działania:</span>
-                                            <span class="text-brand-200">Tarnobrzeg i okoliczne miejscowości (Sandomierz, Stalowa Wola do 20km).</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="mt-12 lg:mt-0 pt-8 border-t border-brand-600">
-                                <p class="text-brand-200 text-sm">Pracujemy od poniedziałku do soboty w godzinach 8:00 - 18:00.</p>
-                            </div>
-                        </div>
-
-                        <!-- Formularz -->
-                        <div class="p-10 lg:p-16">
-                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Napisz do nas</h3>
-                            <form onsubmit="event.preventDefault(); showSuccessMessage();" class="space-y-6">
-                                <div>
-                                    <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Imię i nazwisko</label>
-                                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-shadow" placeholder="Jan Kowalski">
-                                </div>
-                                <div>
-                                    <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Numer telefonu</label>
-                                    <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-shadow" placeholder="+48 000 000 000">
-                                </div>
-                                <div>
-                                    <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Wiadomość / Lokalizacja grobu</label>
-                                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-shadow resize-none" placeholder="Proszę o wycenę sprzątania nagrobka na cmentarzu w..."></textarea>
-                                </div>
-                                <button type="submit" class="w-full py-4 px-6 border border-transparent rounded-lg shadow-sm text-lg font-medium text-white bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 transition-colors">
-                                    Wyślij wiadomość
-                                </button>
-                                <div id="success-msg" class="hidden mt-4 p-4 bg-green-100 text-green-800 rounded-lg text-sm font-medium">
-                                    Dziękujemy za wiadomość! Skontaktujemy się z Tobą wkrótce.
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-                <a href="#" class="flex items-center gap-3 group focus:outline-none mb-2">
-                    <div class="w-10 h-10 flex items-center justify-center shrink-0">
-                        <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M28 86V34C28 20 38 12 51 12C64 12 74 20 74 34V86" fill="#e2e8f0" stroke="#64748b"
-                                stroke-width="4.5" stroke-linejoin="round" />
-                            <path d="M14 86V48C14 34 24 26 39 26C54 26 64 34 64 48V86" fill="#ffffff" stroke="#B8860B"
-                                stroke-width="6.5" stroke-linejoin="round" />
-                            <rect x="6" y="85" width="88" height="6" rx="3" fill="#B8860B" />
-                            <path d="M80 16Q80 27 91 27Q80 27 80 38Q80 27 69 27Q80 27 80 16Z" fill="#D99B16" />
-                        </svg>
-                    </div>
-                    <div>
-                        <span class="text-xl font-bold tracking-tight text-white group-hover:text-[#B8860B] transition-colors">Groby Tarnobrzeg</span>
-                        <span class="block text-[14px] text-[#B8860B] font-medium tracking-wider normal-case">Sprzątanie grobów</span>
-                    </div>
-                </a>
-                <p class="text-sm">Profesjonalna opieka nad grobami w Tarnobrzegu.</p>
-            </div>
-            <div class="flex flex-wrap justify-center gap-6 text-sm">
-                <a href="#oferta" class="hover:text-white transition-colors">Oferta</a>
-                <a href="#jak-to-dziala" class="hover:text-white transition-colors">Jak to działa</a>
-                <a href="#kontakt" class="hover:text-white transition-colors">Kontakt</a>
-                <a href="polityka_prywatnosci.html" class="hover:text-white transition-colors">Polityka Prywatności</a>
-            </div>
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1567878151693-c0493e064199?auto=format&amp;fit=crop&amp;q=70&amp;w=800&amp;h=1000"
+               srcset="https://images.unsplash.com/photo-1567878151693-c0493e064199?auto=format&amp;fit=crop&amp;q=70&amp;w=480&amp;h=600 480w, https://images.unsplash.com/photo-1567878151693-c0493e064199?auto=format&amp;fit=crop&amp;q=70&amp;w=800&amp;h=1000 800w, https://images.unsplash.com/photo-1567878151693-c0493e064199?auto=format&amp;fit=crop&amp;q=70&amp;w=1100&amp;h=1375 1100w"
+               sizes="(min-width: 56rem) 40vw, 92vw" width="800" height="1000" fetchpriority="high" decoding="async"
+               alt="Stare nagrobki wśród polnych kwiatów w świetle zachodzącego słońca">
+          <div class="hero-badge">
+            <svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg>
+            <span><strong>Foto-raport</strong><br>po każdej wizycie na cmentarzu</span>
+          </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 text-center text-xs text-gray-500">
-            &copy; 2026 Groby Tarnobrzeg. Wszelkie prawa zastrzeżone.
+      </div>
+    </section>
+
+    <section id="uslugi" class="section section-sage" aria-labelledby="uslugi-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Usługi</p>
+          <h2 id="uslugi-title">Opieka nad grobem – od porządków po stałą opiekę</h2>
+          <p>Wybierz jednorazową usługę albo ustal stałe terminy wizyt. Zakres dopasuję do Twoich potrzeb.</p>
         </div>
-    </footer>
+        <div class="grid">
+          <article class="card">
+            <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg></div>
+            <h3>Sprzątanie grobu</h3>
+            <p>Usuwanie liści, chwastów, starych zniczy i zwiędłych kwiatów oraz uporządkowanie płyty i obramowania.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-drop"/></svg></div>
+            <h3>Mycie nagrobków</h3>
+            <p>Delikatne czyszczenie kamienia, usuwanie zacieków, mchu i osadów preparatami dobranymi do rodzaju materiału.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-candle"/></svg></div>
+            <h3>Znicze i kwiaty</h3>
+            <p>Zapalenie znicza lub złożenie kwiatów w rocznicę, na urodziny czy w święta – ze zdjęciem na potwierdzenie.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></div>
+            <h3>Opieka cykliczna</h3>
+            <p>Regularne wizyty w ustalonych terminach: co miesiąc, co kwartał lub sezonowo. Grób zawsze zadbany.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-wreath"/></svg></div>
+            <h3>Stroiki i dekoracje</h3>
+            <p>Wiązanki, stroiki, wrzosy i chryzantemy dobrane do pory roku oraz Twoich oczekiwań.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg></div>
+            <h3>Odświeżanie i impregnacja</h3>
+            <p>Odświeżenie wyblakłych napisów i zabezpieczenie kamienia, tak aby dłużej wyglądał schludnie.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <!-- Skrypty -->
-    <script>
-        // Logika przełączania motywu Jasny/Ciemny (Dark Mode)
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const darkIcon = document.getElementById('theme-toggle-dark-icon');
-        const lightIcon = document.getElementById('theme-toggle-light-icon');
+    <section class="band on-dark" aria-labelledby="band-title">
+      <img src="https://images.unsplash.com/photo-1476873282730-9018f17bdf4e?auto=format&amp;q=60&amp;w=1200"
+           srcset="https://images.unsplash.com/photo-1476873282730-9018f17bdf4e?auto=format&amp;q=60&amp;w=800 800w, https://images.unsplash.com/photo-1476873282730-9018f17bdf4e?auto=format&amp;q=60&amp;w=1200 1200w, https://images.unsplash.com/photo-1476873282730-9018f17bdf4e?auto=format&amp;q=60&amp;w=1800 1800w"
+           sizes="100vw" width="1800" height="1200" loading="lazy" decoding="async" alt="">
+      <div class="container">
+        <p class="eyebrow">Dlaczego to ważne</p>
+        <h2 id="band-title" class="band-quote">„Pamięć o bliskich najlepiej widać w miejscu, gdzie spoczywają.”</h2>
+        <p>Wiem, że nie zawsze możesz przyjść osobiście: z powodu odległości, wieku, zdrowia lub braku czasu. Dlatego robię to rzetelnie i z należytym szacunkiem, tak jakby chodziło o mojego bliskiego.</p>
+      </div>
+    </section>
 
-        // Ustawienie początkowe na podstawie localStorage lub preferencji systemowych
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-            lightIcon.classList.remove('hidden');
-        } else {
-            document.documentElement.classList.remove('dark');
-            darkIcon.classList.remove('hidden');
-        }
+    <section id="jak-to-dziala" class="section" aria-labelledby="kroki-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Jak to działa</p>
+          <h2 id="kroki-title">Cztery proste kroki</h2>
+          <p>Bez formalności i zbędnych rozmów. Zlecenie możesz złożyć telefonicznie lub przez formularz.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>Zgłoś zlecenie</h3>
+            <p>Zadzwoń lub napisz. Podaj cmentarz, kwaterę i numer grobu albo prześlij zdjęcie nagrobka.</p>
+          </li>
+          <li>
+            <h3>Otrzymaj wycenę</h3>
+            <p>Na podstawie zdjęcia lub oględzin podaję cenę. Wycena jest bezpłatna i do niczego nie zobowiązuje.</p>
+          </li>
+          <li>
+            <h3>Realizacja</h3>
+            <p>Wykonuję prace w uzgodnionym terminie, zachowując porządek i szacunek dla miejsca.</p>
+          </li>
+          <li>
+            <h3>Foto-raport</h3>
+            <p>Wysyłam zdjęcia przed i po pracach, żebyś mógł zobaczyć efekt bez wychodzenia z domu.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-        themeToggleBtn.addEventListener('click', function() {
-            // Przełączanie ikon
-            darkIcon.classList.toggle('hidden');
-            lightIcon.classList.toggle('hidden');
+    <section id="cennik" class="section section-sage" aria-labelledby="cennik-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cennik</p>
+          <h2 id="cennik-title">Przejrzyste, orientacyjne ceny</h2>
+          <p>Poniższe kwoty to ceny wyjściowe dla grobu pojedynczego. Dokładną cenę podaję zawsze przed rozpoczęciem prac.</p>
+        </div>
+        <div class="pricing">
+          <article class="plan">
+            <h3>Jednorazowe sprzątanie</h3>
+            <p class="desc">Dla grobu, który potrzebuje porządków.</p>
+            <p class="price">od 80 zł <small>brutto</small></p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Usunięcie liści, chwastów i starych zniczy</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Uporządkowanie płyty i obramowania</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Wywóz odpadów</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Zdjęcia przed i po</li>
+            </ul>
+            <a class="btn" href="#kontakt">Zapytaj o termin</a>
+          </article>
+          <article class="plan featured">
+            <span class="plan-tag">Najczęściej wybierany</span>
+            <h3>Opieka sezonowa</h3>
+            <p class="desc">Cztery wizyty w roku, grób zawsze zadbany.</p>
+            <p class="price">od 280 zł <small>brutto / sezon</small></p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> 4 wizyty w ustalonych terminach</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Sprzątanie i mycie nagrobka</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Znicz na wybrane okazje</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Foto-raport po każdej wizycie</li>
+            </ul>
+            <a class="btn btn-primary" href="#kontakt">Zamów wycenę</a>
+          </article>
+          <article class="plan">
+            <h3>Wszystkich Świętych</h3>
+            <p class="desc">Kompletne przygotowanie grobu na 1 listopada.</p>
+            <p class="price">od 150 zł <small>brutto</small></p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Sprzątanie i mycie nagrobka</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Stroik lub wiązanka (koszt materiałów wg wyboru)</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Zapalenie znicza</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Zdjęcia po wykonaniu</li>
+            </ul>
+            <a class="btn" href="#kontakt">Zarezerwuj termin</a>
+          </article>
+        </div>
+        <p class="note">Ceny mają charakter informacyjny i nie stanowią oferty w rozumieniu Kodeksu cywilnego. Grób wielostanowiskowy, duże zaniedbanie lub dojazd poza Tarnobrzeg mogą wpłynąć na cenę.</p>
+      </div>
+    </section>
 
-            // Jeśli jest już ciemny, zmień na jasny
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('color-theme', 'light');
-            } else {
-                // W przeciwnym razie zmień na ciemny
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('color-theme', 'dark');
-            }
-        });
+    <section id="o-mnie" class="section" aria-labelledby="omnie-title">
+      <div class="container split">
+        <img src="https://images.unsplash.com/photo-1598146621261-7cdbb2b30d4b?auto=format&amp;fit=crop&amp;q=70&amp;w=800&amp;h=533"
+             srcset="https://images.unsplash.com/photo-1598146621261-7cdbb2b30d4b?auto=format&amp;fit=crop&amp;q=70&amp;w=480&amp;h=320 480w, https://images.unsplash.com/photo-1598146621261-7cdbb2b30d4b?auto=format&amp;fit=crop&amp;q=70&amp;w=800&amp;h=533 800w, https://images.unsplash.com/photo-1598146621261-7cdbb2b30d4b?auto=format&amp;fit=crop&amp;q=70&amp;w=1100&amp;h=733 1100w"
+             sizes="(min-width: 56rem) 45vw, 92vw" width="800" height="533" loading="lazy" decoding="async"
+             alt="Pastelowe kwiaty ułożone na kamiennym nagrobku z napisem „In loving memory”">
+        <div>
+          <p class="eyebrow">O mnie</p>
+          <h2 id="omnie-title">Z szacunkiem, rzetelnie, po sąsiedzku</h2>
+          <p>Zajmuję się opieką nad grobami w Tarnobrzegu i okolicach. Wiem, że to sprawa bardzo osobista, dlatego traktuję każde zlecenie z należytą powagą i dyskrecją.</p>
+          <div class="values">
+            <div class="value">
+              <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></div>
+              <div><h3>Szacunek dla miejsca</h3><p>Pracuję spokojnie, bez pośpiechu i z poszanowaniem innych odwiedzających.</p></div>
+            </div>
+            <div class="value">
+              <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></div>
+              <div><h3>Rzetelność i przejrzystość</h3><p>Ustalona cena, jasny zakres prac i zdjęcia jako potwierdzenie wykonania.</p></div>
+            </div>
+            <div class="value">
+              <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></div>
+              <div><h3>Zlecenie na odległość</h3><p>Wszystko załatwisz telefonicznie lub online, także mieszkając w innym mieście czy kraju.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        // Obsługa wysłania formularza demonstracyjnego (zamiast alertu)
-        function showSuccessMessage() {
-            const form = document.querySelector('form');
-            const msg = document.getElementById('success-msg');
-            msg.classList.remove('hidden');
-            form.reset();
-            
-            setTimeout(() => {
-                msg.classList.add('hidden');
-            }, 5000);
-        }
-    </script>
+    <section id="obszar" class="section section-sage" aria-labelledby="obszar-title">
+      <div class="container split reverse">
+        <div>
+          <p class="eyebrow">Obszar działania</p>
+          <h2 id="obszar-title">Cmentarze w Tarnobrzegu i okolicach</h2>
+          <p>Dojeżdżam na cmentarze w Tarnobrzegu oraz w miejscowościach w promieniu około 30 km. Jeśli Twojej miejscowości nie ma na liście, zapytaj. Często da się to uzgodnić.</p>
+          <ul class="tags" aria-label="Miejscowości">
+            <li>Tarnobrzeg</li>
+            <li>Nowa Dęba</li>
+            <li>Gorzyce</li>
+            <li>Baranów Sandomierski</li>
+            <li>Grębów</li>
+            <li>Sandomierz</li>
+            <li>Stalowa Wola</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></div>
+          <h3>Godziny pracy</h3>
+          <p>Poniedziałek – sobota: 8:00–18:00.<br>W sezonie przed 1 listopada pracuję także w niedziele.</p>
+          <h3 class="mt">Telefon i wiadomości</h3>
+          <p>Odbieram w godzinach pracy. Jeśli nie odbieram, oddzwonię najszybciej, jak to możliwe.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Najczęstsze pytania</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Skąd będę wiedzieć, że usługa została wykonana? <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div><p>Po każdej wizycie wysyłam zdjęcia grobu przed i po pracach – SMS-em, e-mailem lub przez komunikator.</p></div>
+          </details>
+          <details>
+            <summary>Czy muszę być obecny na cmentarzu? <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div><p>Nie. Wystarczy, że podasz lokalizację grobu. Usługę mogę wykonać także dla osób mieszkających daleko lub za granicą.</p></div>
+          </details>
+          <details>
+            <summary>Jak opisać, gdzie znajduje się grób? <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div><p>Podaj nazwę cmentarza oraz kwaterę, rząd i numer grobu. Pomocne jest też zdjęcie nagrobka lub imię i nazwisko osoby pochowanej.</p></div>
+          </details>
+          <details>
+            <summary>Czy potrzebna jest zgoda zarządcy cmentarza? <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div><p>Zwykłe sprzątanie i mycie zazwyczaj jej nie wymaga. Większe prace przy nagrobku mogą wymagać zgody zarządcy – zawsze stosuję się do regulaminu danego cmentarza.</p></div>
+          </details>
+          <details>
+            <summary>Czy wykonujesz usługi przed Wszystkimi Świętymi? <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div><p>Tak, ale terminy w październiku szybko się zapełniają, dlatego warto zgłosić się z wyprzedzeniem.</p></div>
+          </details>
+          <details>
+            <summary>Jak mogę zapłacić? <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div><p>Przelewem, BLIK-iem lub gotówką. Cenę podaję przed rozpoczęciem prac.</p></div>
+          </details>
+          <details>
+            <summary>Jakich środków używasz do mycia nagrobków? <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div><p>Delikatnych preparatów dobranych do rodzaju kamienia, bez agresywnych substancji, które mogłyby go uszkodzić.</p></div>
+          </details>
+          <details>
+            <summary>Co jeśli nie będę zadowolony z efektu? <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div><p>Napisz lub zadzwoń. Poprawię to, co wymaga poprawy, lub rozpatrzę reklamację zgodnie z <a href="regulamin.html">regulaminem</a>.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="band on-dark" aria-labelledby="cta-title">
+      <img src="https://images.unsplash.com/photo-1561821632-0ac8d40ad4d1?auto=format&amp;q=60&amp;w=1200"
+           srcset="https://images.unsplash.com/photo-1561821632-0ac8d40ad4d1?auto=format&amp;q=60&amp;w=800 800w, https://images.unsplash.com/photo-1561821632-0ac8d40ad4d1?auto=format&amp;q=60&amp;w=1200 1200w, https://images.unsplash.com/photo-1561821632-0ac8d40ad4d1?auto=format&amp;q=60&amp;w=1800 1800w"
+           sizes="100vw" width="1800" height="1350" loading="lazy" decoding="async" alt="">
+      <div class="container">
+        <h2 id="cta-title" class="band-quote">Zadbaj o grób bliskich, nawet gdy jesteś daleko.</h2>
+        <p>Napisz, gdzie znajduje się grób, a w krótkim czasie odezwę się z wyceną. To nic nie kosztuje i do niczego nie zobowiązuje.</p>
+        <div class="band-actions">
+          <a class="btn btn-light" href="#kontakt">Wyślij zapytanie</a>
+          <a class="btn btn-outline-light" href="tel:+48600000000"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Zadzwoń</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section" aria-labelledby="kontakt-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2 id="kontakt-title">Poproś o bezpłatną wycenę</h2>
+          <p class="lead">Wypełnij formularz lub zadzwoń. Odpowiadam zwykle w ciągu jednego dnia roboczego.</p>
+          <ul class="contact-list">
+            <li>
+              <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></div>
+              <div><strong>Telefon</strong><a href="tel:+48600000000">+48 600 000 000</a></div>
+            </li>
+            <li>
+              <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></div>
+              <div><strong>E-mail</strong><a href="mailto:kontakt@example.pl">kontakt@example.pl</a></div>
+            </li>
+            <li>
+              <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></div>
+              <div><strong>Obszar działania</strong>Tarnobrzeg i okolice (ok. 30 km)</div>
+            </li>
+            <li>
+              <div class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></div>
+              <div><strong>Godziny pracy</strong>Pon.–sob.: 8:00–18:00</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <form id="contact-form" action="contact.php" method="post" novalidate>
+            <div class="form-grid two">
+              <div class="field">
+                <label for="f-name">Imię i nazwisko</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="100">
+              </div>
+              <div class="field">
+                <label for="f-phone">Telefon</label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20">
+              </div>
+              <div class="field">
+                <label for="f-email">E-mail <span class="opt">(opcjonalnie)</span></label>
+                <input id="f-email" name="email" type="email" autocomplete="email" maxlength="120">
+              </div>
+              <div class="field">
+                <label for="f-service">Rodzaj usługi</label>
+                <select id="f-service" name="service" required>
+                  <option value="">Wybierz…</option>
+                  <option>Sprzątanie grobu</option>
+                  <option>Mycie nagrobka</option>
+                  <option>Znicze i kwiaty</option>
+                  <option>Opieka cykliczna</option>
+                  <option>Przygotowanie na Wszystkich Świętych</option>
+                  <option>Inne / nie jestem pewien</option>
+                </select>
+              </div>
+              <div class="field span-2">
+                <label for="f-cemetery">Cmentarz i lokalizacja grobu <span class="opt">(opcjonalnie)</span></label>
+                <input id="f-cemetery" name="cemetery" type="text" maxlength="150" placeholder="np. cmentarz, kwatera, rząd, numer grobu">
+              </div>
+              <div class="field span-2">
+                <label for="f-message">Wiadomość</label>
+                <textarea id="f-message" name="message" required minlength="10" maxlength="2000" placeholder="Opisz krótko, czego potrzebujesz."></textarea>
+              </div>
+              <div class="hp" aria-hidden="true">
+                <label for="f-website">Nie wypełniaj tego pola</label>
+                <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+              </div>
+              <div class="field span-2">
+                <label class="check" for="f-consent">
+                  <input id="f-consent" name="consent" type="checkbox" value="1" required>
+                  <span>Zapoznałem(-am) się z <a href="polityka-prywatnosci.html">Polityką prywatności</a> i <a href="regulamin.html">Regulaminem</a>. Wiem, że podane dane zostaną użyte do odpowiedzi na zapytanie.</span>
+                </label>
+              </div>
+              <div class="span-2">
+                <button class="btn btn-primary btn-block" type="submit">Wyślij zapytanie</button>
+                <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+              </div>
+            </div>
+          </form>
+          <p class="fine">Administratorem danych jest Imię Nazwisko, działające pod firmą Pamięć i Porządek. Dane przetwarzam w celu odpowiedzi na zapytanie. Szczegóły w <a href="polityka-prywatnosci.html">Polityce prywatności</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="Pamięć i Porządek – strona główna">
+            <svg class="icon" aria-hidden="true"><use href="#i-logo"/></svg>
+            <span>Pamięć i Porządek</span>
+          </a>
+          <p>Sprzątanie i opieka nad grobami w Tarnobrzegu i okolicach.</p>
+        </div>
+        <div>
+          <h2>Nawigacja</h2>
+          <ul>
+            <li><a href="#uslugi">Usługi</a></li>
+            <li><a href="#cennik">Cennik</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Informacje prawne</h2>
+          <ul>
+            <li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li>
+            <li><a href="polityka-cookies.html">Polityka cookies</a></li>
+            <li><a href="regulamin.html">Regulamin</a></li>
+            <li><button class="link-btn" type="button" data-cookie-settings>Ustawienia cookies</button></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Dane firmy</h2>
+          <p>Imię Nazwisko<br>Pamięć i Porządek<br>ul. Przykładowa 1<br>39-400 Tarnobrzeg<br>NIP: 000-000-00-00</p>
+          <p><a href="tel:+48600000000">+48 600 000 000</a><br><a href="mailto:kontakt@example.pl">kontakt@example.pl</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Pamięć i Porządek. Wszelkie prawa zastrzeżone. Zdjęcia: <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a> (licencja Unsplash).</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="call-bar" href="tel:+48600000000"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Zadzwoń: +48 600 000 000</a>
+
+  <script src="js/site.js?v=1" defer></script>
 </body>
 </html>
