@@ -3,4 +3,4 @@ Allow: /
 Disallow: /contact.php
 Disallow: /dziekujemy.html
 
-Sitemap: https://www.example.pl/sitemap.xml
+Sitemap: https://grobytarnobrzeg.pl/sitemap.xml

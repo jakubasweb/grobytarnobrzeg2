@@ -8,7 +8,7 @@ Użyj wyszukiwania w całym projekcie (Ctrl+Shift+F) i podmień:
 
 | Wyszukaj | Zamień na |
 |---|---|
-| `https://www.example.pl` / `www.example.pl` | adres Twojej domeny (HTML, `sitemap.xml`, `robots.txt`, JSON-LD w `index.html`) |
+| `https://grobytarnobrzeg.pl` / `grobytarnobrzeg.pl` | adres Twojej domeny (HTML, `sitemap.xml`, `robots.txt`, JSON-LD w `index.html`) |
 | `+48 600 000 000`, `+48600000000`, `600 000 000` | Twój numer telefonu |
 | `kontakt@example.pl` | Twój adres e-mail (także w `contact.php`) |
 | `formularz@example.pl` | adres nadawcy w Twojej domenie (`contact.php`, stała `MAIL_FROM`) |

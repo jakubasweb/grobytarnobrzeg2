@@ -19,7 +19,7 @@ DirectoryIndex index.html
 
   # Opcjonalnie: wymuszenie "www" (odkomentuj i podmień domenę)
   # RewriteCond %{HTTP_HOST} ^example\.pl$ [NC]
-  # RewriteRule ^ https://www.example.pl%{REQUEST_URI} [L,R=301]
+  # RewriteRule ^ https://grobytarnobrzeg.pl%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 # Blokada plików ukrytych i konfiguracyjnych
