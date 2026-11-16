@@ -86,6 +86,7 @@ ul, ol { margin: 0 0 1em; padding-left: 1.25rem; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.25rem; }
 .brand { display: inline-flex; align-items: center; gap: .6rem; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -.01em; }
 .brand .icon { width: 2.25rem; height: 2.25rem; padding: .4rem; border-radius: 10px; background: var(--primary); color: #fff; }
+.brand .brand-logo { background: none; padding: 0; border-radius: 0; color: var(--primary); }
 .brand:hover { color: var(--ink); }
 .nav-toggle {
   display: none; align-items: center; justify-content: center; width: 3rem; height: 3rem;
