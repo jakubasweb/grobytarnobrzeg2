@@ -1,4 +1,4 @@
-# Pamięć i Porządek – strona wizytówka (sprzątanie grobów)
+# Groby Tarnobrzeg – strona wizytówka (sprzątanie grobów)
 
 Statyczna strona HTML/CSS/JS bez bibliotek i bez budowania. Formularz kontaktowy obsługuje `contact.php` (hosting z PHP 7.2+ i funkcją `mail()`).
 
@@ -12,8 +12,8 @@ Użyj wyszukiwania w całym projekcie (Ctrl+Shift+F) i podmień:
 | `+48 600 000 000`, `+48600000000`, `600 000 000` | Twój numer telefonu |
 | `kontakt@example.pl` | Twój adres e-mail (także w `contact.php`) |
 | `formularz@example.pl` | adres nadawcy w Twojej domenie (`contact.php`, stała `MAIL_FROM`) |
-| `Imię Nazwisko`, `ul. Przykładowa 1`, `39-400 Tarnobrzeg`, `000-000-00-00`, `000000000` | dane z CEIDG (NIP, REGON, adres) |
-| `Pamięć i Porządek` | nazwa Twojej firmy/marki |
+| `Imię Nazwisko`, `ul. Przykładowa 1`, `39-400 Tarnobrzeg` | Twoje dane i adres do korespondencji (działalność nierejestrowana – bez NIP, REGON i CEIDG) |
+| `Groby Tarnobrzeg` | nazwa Twojej marki (działalność nierejestrowana) |
 | żółte pola `.placeholder` w stronach prawnych | nazwy dostawcy hostingu i biura księgowego |
 
 Dodatkowo:
