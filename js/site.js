@@ -103,7 +103,7 @@
           }
         })
         .catch(function () {
-          setStatus('err', 'Nie udało się wysłać wiadomości. Spróbuj ponownie lub zadzwoń: +48 600 000 000.');
+          setStatus('err', 'Nie udało się wysłać wiadomości. Spróbuj ponownie lub zadzwoń: +48 607 455 340.');
         })
         .then(function () { btn.disabled = false; });
     });

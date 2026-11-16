@@ -6,8 +6,8 @@
  */
 declare(strict_types=1);
 
-const MAIL_TO   = 'kontakt@example.pl';
-const MAIL_FROM = 'formularz@example.pl';
+const MAIL_TO   = 'kontakt@grobytarnobrzeg.pl';
+const MAIL_FROM = 'formularz@grobytarnobrzeg.pl';
 const SITE_NAME = 'Groby Tarnobrzeg';
 const THANKS_URL = 'dziekujemy.html';
 const MIN_SECONDS_BETWEEN_SUBMISSIONS = 30;
