@@ -34,6 +34,29 @@
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
+  /* ---------- Powrót na górę strony ---------- */
+  var backToTop = document.createElement('button');
+  backToTop.className = 'back-to-top';
+  backToTop.type = 'button';
+  backToTop.hidden = true;
+  backToTop.setAttribute('aria-label', 'Wróć na górę strony');
+  backToTop.innerHTML =
+    '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
+    '<path d="M5 12l7-7 7 7M12 5v14"></path></svg>';
+  document.body.appendChild(backToTop);
+
+  var updateBackToTop = function () {
+    backToTop.hidden = window.scrollY < 320;
+  };
+  updateBackToTop();
+  window.addEventListener('scroll', updateBackToTop, { passive: true });
+  backToTop.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+    });
+  });
+
   /* ---------- Formularz kontaktowy ---------- */
   var form = document.getElementById('contact-form');
   if (form) {

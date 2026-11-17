@@ -278,6 +278,22 @@ ul, ol { margin: 0 0 1em; padding-left: 1.25rem; }
 body.has-callbar { padding-bottom: 3.5rem; }
 @media (min-width: 48rem) { .call-bar { display: none; } body.has-callbar { padding-bottom: 0; } }
 
+/* ---------- Powrót na górę strony ---------- */
+.back-to-top {
+  position: fixed; right: 1rem; bottom: 4.5rem; z-index: 60;
+  display: grid; place-items: center; width: 3rem; height: 3rem; padding: 0;
+  border: 2px solid #fff; border-radius: 50%; background: var(--primary); color: #fff;
+  box-shadow: var(--shadow); cursor: pointer; transition: background-color .2s, transform .2s;
+}
+.back-to-top:hover { background: var(--primary-dark); transform: translateY(-2px); }
+.back-to-top:focus-visible { outline-color: var(--gold); }
+.back-to-top[hidden] { display: none; }
+.back-to-top svg {
+  width: 1.4rem; height: 1.4rem; fill: none; stroke: currentColor; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+@media (min-width: 48rem) { .back-to-top { right: 1.5rem; bottom: 1.5rem; } }
+
 /* ---------- Strony prawne ---------- */
 .page-head { padding-block: clamp(2.5rem, 6vw, 4rem) 1rem; }
 .back-link { display: inline-flex; align-items: center; gap: .4rem; font-weight: 600; text-decoration: none; }
@@ -328,6 +344,6 @@ body.has-callbar { padding-bottom: 3.5rem; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 @media print {
-  .site-header, .call-bar, .cc, .site-footer .link-btn { display: none !important; }
+  .site-header, .call-bar, .back-to-top, .cc, .site-footer .link-btn { display: none !important; }
   body { background: #fff; }
 }
