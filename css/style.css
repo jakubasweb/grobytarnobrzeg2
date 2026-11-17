@@ -147,6 +147,8 @@ ul, ol { margin: 0 0 1em; padding-left: 1.25rem; }
 
 /* ---------- Karty ---------- */
 .grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); }
+.services-grid { display: flex; flex-wrap: wrap; }
+.services-grid .card { flex: 1 1 17rem; }
 .card {
   padding: 1.75rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
   transition: box-shadow .25s, transform .25s;
