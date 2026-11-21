@@ -1,7 +1,8 @@
 {
   "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
   "editor.defaultFormatter": "vscode.html-language-features",
-  "accessibility.voice.speechLanguage": "pl-PL",
+  "accessibility.voice.speechLanguage": "auto",
   "dictation.enabled": true,
   "dictation.showButton": true,
   "dictation.showTranscript": true,
